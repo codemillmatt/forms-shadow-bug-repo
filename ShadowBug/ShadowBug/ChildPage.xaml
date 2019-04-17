@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="ShadowBug.ChildPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="I'm the child!" HorizontalOptions="Center" />
+            <Button CornerRadius="32" HeightRequest="64" Padding="32,0,32,0"
+                ios:VisualElement.IsShadowEnabled="true"
+                ios:VisualElement.ShadowColor="Black"
+                ios:VisualElement.ShadowOffset="10,10"
+                ios:VisualElement.ShadowOpacity="0.2"
+                BorderColor="Black"
+                Text="Navigate!" 
+                BackgroundColor="Red"
+                IsVisible="false"                    
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
